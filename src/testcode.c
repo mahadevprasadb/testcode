@@ -7,11 +7,11 @@ int random_int(int max)
 }
 void init_rand(void)
 {
-  strand(time(NULL));
+  strand (time(NULL));
 }
 int main(int argc, char *argv[])
 {
- if (argc != 2)
+ if (argc != 1)
 {
  fprintf(stderr, "Usage:: %s <number>\n", argv[0]);
  return EXIT_FAILURE;
