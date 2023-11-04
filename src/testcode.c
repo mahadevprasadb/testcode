@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//TODO: use a better random generator
 int random_int(int max)
 {
- return rand() % max;
+ return rand() % max/RAND_MAX;
 }
 void init_rand(void)
 {
-  strand (time(NULL));
+  srand (time(NULL));
 }
 int main(int argc, char *argv[])
 {
