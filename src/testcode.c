@@ -11,7 +11,7 @@ void init_rand(void)
 }
 int main(int argc, char *argv[])
 {
- if (argc != 1)
+ if (argc != 2)
 {
  fprintf(stderr, "Usage:: %s <number>\n", argv[0]);
  return EXIT_FAILURE;
